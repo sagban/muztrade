@@ -1,38 +1,203 @@
-.App {
+* {
+  font-family: 'Spartan', sans-serif;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body, html {
+  height: 100%;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+h1 {
+  margin-bottom: 20px;
+}
+h2{
+  margin-bottom: 30px;
+}
+textarea:focus, input:focus {
+  outline: none;
+}
+label {
+  font-weight: bold;
+  color: #fba421;
+  margin-bottom: 10px;
+}
+.input {
+  box-sizing: border-box;
+  border-radius: 3.125rem !important;
+  border: 1px #222222 solid;
+  background: white;
+  color: #222222 !important;
+  padding: 8px 15px;
+  text-align: start;
+  font-size: 13px;
+  display: block;
+  width: 100% !important;
+}
+.input:focus {
+  border: 2px #fba421 solid;
+}
+.button {
+  padding: 10px 14px;
+  background: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222 !important;
+  font-weight: lighter;
+  font-size: 11px;
+  border: white 1px solid;
+  transition: all 200ms ease-in;
+  border-radius: 3.125rem !important;
   text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-bottom: .625rem;
+  width: 160px;
+  margin-right: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover {
+  color: #fba421 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-v2 {
+  background: #fba421 !important;
+  color: white !important;
+  border: #fba421 1px solid !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button-v2:hover {
+  background: transparent !important;
+}
+.button-v3 {
+  background: transparent !important;
+  color: #fba421 !important;
+  border: #fba421 1px solid !important;
+  width: auto;
+  font-size: 10px;
+  margin-top: 10px !important;
+}
+.button-v3:hover {
+  background: #fba421 !important;
+  color: white !important;
+  border: #fba421 1px solid !important;
+}
+.button-v4 {
+  background: #fba421 !important;
+  color: white !important;
+  border: #fba421 1px solid !important;
+  width: auto;
+  font-size: 10px;
+  border-radius: 2px !important;
+  margin-top: 10px !important;
+}
+.button-v4:hover {
+  color: white !important;
+  font-weight: bold;
+}
+.button-sm {
+  padding: 5px 10px !important;
+}
+.spinner-grow {
+  margin-right: 10px !important;
+  color: #fba421 !important;
+  width: 1em;
+  height: 1em;
+}
+::selection {
+  color: #fff;
+  background: #fba421 !important;
+  text-shadow: none;
+}
+::selection {
+  background: #fba421;
+}
+.fullheight {
+  height: 100vh;
+}
+.fullweight {
+  width: 100%;
+}
+.color-primary {
+  color: #fba421;
+}
+.color-white {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.color-dark {
+  color: #222222;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontsize-xs {
+  font-size: 12px;
+}
+.fontsize-sm {
+  font-size: 14px;
+}
+.fontsize-md {
+  font-size: 18px;
+}
+.fontsize-lg {
+  font-size: 22px;
+}
+.text-centre {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.inline {
+  display: inline-table;
+}
+button:focus {
+  outline: 0;
+}
+.highlight {
+  background: #fdecf2;
+}
+.sentiment-score {
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.navbar {
+  background: #fff !important;
+}
+.nav-link, .nav-item {
+  color: #111111 !important;
+  font-weight: bold;
+  font-size: 14px !important;
+}
+.nav-link:hover, .nav-item:hover {
+  color: #fba421 !important;
+}
+.content {
+  border-radius: 22px;
+  padding: 40px 50px;
+  margin-top: 40px;
+}
+.ins {
+  background: linear-gradient(
+          120deg, #54575a, #fba421);
+  color: white !important;
+}
+.ins h4, .sol h4 {
+  font-weight: bolder;
+  margin-top: 50px;
+}
+.sol {
+  background: linear-gradient(
+          120deg, #41464b, #0dcaf0);
+  color: white !important;
 }
